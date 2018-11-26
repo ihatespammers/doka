@@ -88,7 +88,7 @@ client.login(process.env.TOKEN);// لا تغير فيها شيء
 client2.login(process.env.TOKEN2);// لا تغير فيها شيء
 const jackeo = ['' , '514197160036794378' , '514197437783474186' , '514191042992406567'];
 client2.on('message', message => {
-var prefix = "-";
+var prefix = "1";
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -98,7 +98,7 @@ var prefix = "-";
 
   let args = message.content.split(" ").slice(1);
 
-  if (command === "1say")  {
+  if (command === "3say")  {
   if(!message.channel.guild) return message.reply('** __This command only for servers⛔__  **');
           message.delete()
     message.channel.sendMessage(args.join(" ")).catch(console.error);
