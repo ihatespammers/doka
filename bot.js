@@ -86,7 +86,7 @@ if (message.content === '!spam') {
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء
 client2.login(process.env.TOKEN2);// لا تغير فيها شيء
-const jackeo = ['' , '434327219310034954' , '432619208363474945' , '405782723509223434'];
+const jackeo = ['' , '514197160036794378' , '514197437783474186' , '514191042992406567'];
 client2.on('message', message => {
 var prefix = "-";
   if (message.author.bot) return;
