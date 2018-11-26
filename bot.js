@@ -86,3 +86,34 @@ if (message.content === '!spam') {
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء
 client2.login(process.env.TOKEN2);// لا تغير فيها شيء
+const jackeo = ['' , '434327219310034954' , '432619208363474945' , '405782723509223434'];
+client2.on('message', message => {
+var prefix = "-";
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+    var argresult = message.content.split(` `).slice(1).join(' ');
+      if (!jackeo.includes(message.author.id)) return;
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command === "1say")  {
+  if(!message.channel.guild) return message.reply('** __This command only for servers⛔__  **');
+          message.delete()
+    message.channel.sendMessage(args.join(" ")).catch(console.error);
+  }
+  
+ 
+
+if (command == "emb")    {
+  if(!message.channel.guild) return message.reply('** __This command only for servers⛔__  **');
+    let say = new Discord.RichEmbed()
+    .setDescription(args.join("  "))
+    .setColor("RANDOM")
+    message.channel.sendEmbed(say);
+    message.delete();
+  }
+
+
+});
