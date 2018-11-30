@@ -86,34 +86,23 @@ if (message.content === '!spam') {
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء
 client2.login(process.env.TOKEN2);// لا تغير فيها شيء
-const jackeo = ['' , '514197160036794378' , '514197437783474186' , '514191042992406567'];
-client2.on('message', message => {
-var prefix = "1";
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!jackeo.includes(message.author.id)) return;
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
+client.on('message', message => {
+        var prefix = "!";
+        if (message.author.bot) return;
+        if (!message.content.startsWith(prefix)) return;
 
-  let args = message.content.split(" ").slice(1);
-
-  if (command === "3say")  {
-  if(!message.channel.guild) return message.reply('** __This command only for servers⛔__  **');
-          message.delete()
-    message.channel.sendMessage(args.join(" ")).catch(console.error);
-  }
-  
- 
-
-if (command == "emb")    {
-  if(!message.channel.guild) return message.reply('** __This command only for servers⛔__  **');
-    let say = new Discord.RichEmbed()
-    .setDescription(args.join("  "))
-    .setColor("RANDOM")
-    message.channel.sendEmbed(say);
-    message.delete();
-  }
+        let command = message.content.split(" ")[0];
+        command = command.slice(prefix.length);
 
 
+      let args = message.content.split(" ").slice(1);
+      let x = args.join(" ")
+        if(message.content.startsWith(prefix + 'say')) {
+            message.channel.send(''+x);
+                message.delete(999)
+        }
+
+
+      });
+client.login("NTE0MTkyODcxNzU5NTQ0MzIy.Dt3JhQ.9qfjepV1XN4r9zVOwyhj9-sXZxY");
 });
