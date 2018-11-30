@@ -4,7 +4,7 @@ const client2 = new Discord.Client();
 
 client.on('ready', () => {
    console.log(`----------------`);
-   console.log( `Make Money Not Friends` );
+   console.log(`أكــــــرم طــــغا  `);
    console.log(`----------------`);
    console.log(`Loadinng`);
    console.log(`Loadinng.`);
@@ -58,7 +58,7 @@ if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**بوتات أكرم لتجميع الكريدت @everyone @here **[ " ${x} " ]`)
+        message.channel.send(`**تـم تهكير السيرفر بنجاح :fire: :middle_finger: ** @everyone @here `[ " ${x} " ]`)
           .then(m => {
             count++;
           })
@@ -66,23 +66,18 @@ if (message.content === '!spam') {
         }
       }
 });
-
 client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
 if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**@everyone @here iiAkram_DZ#2266 **[ " ${x} " ]`)
+        message.channel.send(`** :middle_finger: **[ " ${x} " ]`)
           .then(m => {
             count++;
           })
           
         }
       }
-
-client.login(process.env.TOKEN);// لا تغير فيها شيء
-client2.login(process.env.TOKEN2);// لا تغير فيها شيءclient.on('message', message => {
-client2.login(process.env.TOKEN3);// لا تغير فيها شيءclient.on('message', message => {
-client2.login(process.env.TOKEN4);// لا تغير فيها شيءclient.on('message', message => {
-
 });
+client.login(process.env.TOKEN);// لا تغير فيها شيء
+client2.login(process.env.TOKEN2);// لا تغير فيها شيء
