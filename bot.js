@@ -4,8 +4,7 @@ const client2 = new Discord.Client();
 
 
 client.on('message', message => {
-        var prefix = "-
-";
+        var prefix = "-";
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
 
