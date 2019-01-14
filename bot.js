@@ -1,14 +1,14 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "NTM0MDgzMjI3OTYzMzU5MjQx.Dx0nvw.Duw1w44ZaaypCNTnX_7gWsLCCyY"
+    const kbooshtoken = "NTM0MDgzMjI3OTYzMzU5MjQx.Dx5BWQ.PvczqeQuILvjaAotLPRZZnFeEbk"
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`KBOOSH TEST Broadcast`,'https://www.twitch.tv/TEST-Broadcast');
+        kboosh.user.setGame(`Max Network `,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
   
         });
 
   kboosh.on('message', message => {
-    if (message.content.split(' ')[0] == '%k')
+    if (message.content.split(' ')[0] == '!b')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
@@ -20,7 +20,7 @@ const Discord = require("discord.js");
             
                                                   });
    kboosh.on("message", message => {
-       var prefix = "%";
+       var prefix = "!";
  
              var args = message.content.substring(prefix.length).split(" ");
                 if (message.content.startsWith(prefix + "b")) {
