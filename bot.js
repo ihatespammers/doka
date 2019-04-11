@@ -1,8 +1,9 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "NTM0MDgzMjI3OTYzMzU5MjQx.Dx5BWQ.PvczqeQuILvjaAotLPRZZnFeEbk"
+    const kbooshtoken = "NTM1NDEyMTIwMjc2MzAzODcz.XK9F-w.mW8AAWeiWjxJMKJsOVSIPLrr4A4
+"
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`Max Network `,'https://www.twitch.tv/TEST-Broadcast');
+        kboosh.user.setGame(`xAKRAM | !b `,'https://www.twitch.tv/ROMA-SHOP');
           console.log('Im Ready!');
   
         });
