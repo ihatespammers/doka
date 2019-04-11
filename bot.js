@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "NTM1NDEyMTIwMjc2MzAzODcz.XK9F-w.mW8AAWeiWjxJMKJsOVSIPLrr4A4
-"
+    const kbooshtoken = "NTY1ODk4OTY0MjcyOTM5MDE4.XK9I0Q.Wc15NN3emMX2hhTGijPHKyD3jts"
       kboosh.on('ready', () => {
         kboosh.user.setGame(`xAKRAM | !b `,'https://www.twitch.tv/ROMA-SHOP');
           console.log('Im Ready!');
