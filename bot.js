@@ -1,3 +1,9 @@
+const Discord = require("discord.js");
+  const kboosh = new Discord.Client();
+    const kbooshtoken = "NTM1NDEyMTIwMjc2MzAzODcz.XLkPIA.2-_GVZIQTc-spLqC3jzrT6ACiXA"
+      kboosh.on('ready', () => {
+        kboosh.user.setGame(`xAKRAM `,'https://www.twitch.tv/TEST-bot');
+          console.log('Im Ready!');
 const Discord = require('discord.js');
 
 const Util = require('discord.js');
@@ -344,13 +350,13 @@ client.on('message', message => {
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Music Bot- Script By : CF Na World Clan`);
+      console.log(`Music Bot- Script By : xAKRAM`);
         console.log(`----------------`);
       console.log(`ON ${client.guilds.size} Servers '     Script By : xAKRAM ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Toxic Codes Team`,"http://twitch.tv/CodesxAKRAM")
+client.user.setGame(`xAKRAM`,"http://twitch.tv/CodesxAKRAM")
 client.user.setStatus("dnd")
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.kbooshtoken);
